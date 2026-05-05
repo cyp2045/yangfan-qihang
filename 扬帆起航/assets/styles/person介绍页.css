@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+    text-underline-offset:0.05rem;
+}
+.container{
+    width:19.2rem;
+    height:30rem;
+    /* border:1px solid black; */
+    margin:0 auto;
+}
+/* logo标头 */
+.logo{
+    width:19.2rem;
+    height:1.2rem;
+    background-color:#4646FF;
+    display:flex;
+    align-items:center;
+}
+.logo img{
+    width:0.8rem;
+    height:0.8rem;
+    margin-left:0.9rem;
+}
+.logo h1{
+    color:white;
+    margin-left:0.1rem;
+    font-size:0.48rem;
+}
+/* 位置 */
+.position{
+    width:19.2rem;
+    height:0.8rem;
+    display:flex;
+    align-items:center;
+}
+.position i{
+    font-size:0.35rem;
+    color:red;
+    margin-left:0.5rem;
+}
+.position a,span{
+    font-size:0.24rem;
+    margin-left:0.1rem;
+}
+.position a{
+    color:black;
+    text-decoration:none;
+}
+.position a:hover{
+    color:red;
+    text-decoration:underline;
+}
+.position .current-position{
+    color:#7F7F7F;
+    text-decoration:underline;
+    cursor:pointer;
+}
+/* 介绍 */
+.introduction{
+    width:18.2rem;
+    height:6.5rem;
+    border:0.01rem solid #797979;
+    border-radius:0.35rem;
+    box-shadow:0 0.15rem 0.5em grey;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.introduction .person-images{
+    width:6rem;
+    height:6rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.person-images img{
+    width:4.5rem;
+    height:4.5rem;
+    border-radius:50%;
+}
+.introduction .person-info{
+    width:10rem;
+    height:5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.person-info h1{
+    font-size:0.72rem;
+    color:#D9001B;
+}
+.person-info p{
+    font-size:0.48rem;
+}
+.person-info .text{
+    font-size:0.36rem;
+    color:#AAAAAA;
+}
+/* 教授课程列表 */
+.container .person-course{
+    width:18.2rem;
+    height:auto;
+    margin:0.3rem auto;
+    /* border:0.01rem solid black; */
+}
+.person-course .course-list{
+    width:18.2rem;
+    height:5rem;
+    /* border:1px solid black; */
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.course-list .list01{
+    width:7rem;
+    height:4.3rem;
+    border:0.01rem solid #797979;
+    border-radius:0.35rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#D7D7D7;
+}
+.list01 img{
+    width:6rem;
+    height:3.8rem;
+    border-radius:0.35rem;
+}
+.list01 .list-box{
+    width:5.8rem;
+    height:4rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap:0.2rem;
+}
+.list-box a{
+    font-size:0.28rem;
+    color:#333;
+}
+.list-box a:hover{
+    color:red;
+    text-decoration:underline;
+}
+.list01 .list-box01{
+    width:3rem;
+    height:4rem;
+}
+.list01 .list-box02 .more{
+    display:flex;
+    justify-content:center;
+}
+.list02{
+    width:2.5rem;
+    height:1rem;
+    border-radius:0.35rem;
+    background-color:#D9001B;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.list02 a{
+    font-size:0.36rem;
+    color:white;
+}
+.list02:hover a{
+    color:yellow;
+}
+/* footer */
+.footer{
+    width:18.2rem;
+    height:2rem;
+    /* border:0.01rem solid black; */
+    margin:4rem auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer h1{
+    color:red;
+    font-size:0.72rem;
+}

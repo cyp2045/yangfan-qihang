@@ -1,0 +1,443 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+    text-underline-offset:0.05rem;
+}
+.big-box{
+    width:19.2rem;
+    height:auto;
+    /* border:1px solid black; */
+    margin:0 auto;
+}
+.title a:hover{
+    color:red;
+}
+/* logo标头 */
+.logo{
+    width:19.2rem;
+    height:1.2rem;
+    background-color:#4646FF;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+.logo img{
+    width:0.8rem;
+    height:0.8rem;
+    margin-left:0.9rem;
+}
+.logo h1{
+    color:white;
+    margin-left:0.1rem;
+    font-size:0.48rem;
+    width:100%;
+    height:100%;
+    display:block;
+    line-height:1.2rem;
+}
+/* banner区域 */
+.banner{
+    margin:0.3rem auto;
+    width:18.2rem;
+    height:6.5rem;
+    /* background-color:#D7D7D7; */
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.banner-left{
+    width:4rem;
+    height:6rem;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.banner-left img{
+    width: 3rem;
+    height: 3rem;
+}
+.banner-left .text{
+    width:3.5rem;
+    height:1rem;
+    background-color:#D9001B;
+    border-radius:0.35rem;
+    color:white;
+    font-size:0.36rem;
+    text-align:center;
+    line-height:1rem;
+}
+
+/* 轮播图 */
+.banner-right{
+    width:12.6rem;
+    height:6rem;
+    /* border:1px solid black; */
+    overflow:hidden;
+}
+.banner-right .imglist{
+    width:50.4rem;
+    height:6rem;
+    display:flex;
+    flex-direction:row;
+}
+.banner-right .imglist img{
+    width:12.6rem;
+    height:6rem;
+}
+
+/* 导航栏 */
+.nav{
+    width:19.2rem;
+    height:1rem;
+    background-color:#4646FF;
+    display:flex;
+    justify-content:space-evenly;
+}
+.nav .current{
+    background-color:rgba(255,255,255,0.3);
+}
+.nav li{
+    float:left;
+    width:3.2rem;
+    height:1rem;
+    text-align:center;
+}
+.nav li:hover{
+    background-color:rgba(255,255,255,0.3);
+}
+.nav li a{
+    color:yellow;
+    font-size:0.36rem;
+    line-height:1rem;
+    width:100%;
+    height:100%;
+    display:block;
+}
+.nav li:last-child{
+    position:relative;
+}
+/* 二级菜单 */
+.nav .droplist{
+    width:3.2rem;
+    height:2rem;
+    background-color:blue;
+    box-shadow:0 0.32rem 0.08rem 0 grey;
+    display:none;
+    position:absolute;
+    z-index:9999;
+}
+.droplist li{
+    width:3.2rem;
+    height:1rem;
+}
+.nav li:last-child:hover .droplist{
+    display:block;
+}
+.nav .droplist a{
+    color:white;
+}
+.nav .droplist li:hover{
+    background-color:#4646FF;
+}
+.nav .droplist li:hover a{
+    color:yellow;
+}
+
+/* 网课教程 */
+.online-course{
+    width:18rem;
+    height:9rem;
+    margin:0.45rem auto;
+    /* border:1px solid black; */
+}
+.online-course i,.pritice h2 i{
+    color:red;
+    font-size:0.6rem;
+    vertical-align:middle;
+    margin:0.1rem 0.15rem;
+}
+.online-course h2,.pritice h2{
+    color:red;
+    font-size:0.36rem;
+}
+.online-course hr,.pritice hr{
+    margin:0.2rem;
+    font-weight:2rem;
+} 
+.online-course .online-container{
+    display:flex;
+    justify-content:space-evenly;
+}
+.online-course .rili-left{
+    width:4rem;
+    height:2.4rem;
+    /* border:1px solid black; */
+}
+.rili-left .box-top{
+    width:3rem;
+    height:0.8rem;
+    text-align:center;
+    background-color:#D9001B;
+    line-height:0.8rem;
+    border-top-left-radius:0.4rem;
+    border-top-right-radius:0.4rem;
+    margin:0 auto;
+    color:white;
+    font-size:0.48rem;
+}
+.rili-left .box-bottom{
+    width:3rem;
+    height:1.6rem;
+    text-align:center;
+    border:0.01rem solid black;
+    line-height:1.6rem;
+    border-bottom-right-radius:0.4rem;
+    border-bottom-left-radius:0.4rem;
+    margin:0 auto;
+    color:red;
+    font-size:0.72rem;
+}
+.online-course .rili-right{
+    width:13.5rem;
+    height:2.4rem;
+    border:0.01rem solid black;
+    z-index:0;
+    border-radius:0.4rem;
+    background-color:#D7D7D7;
+}
+/* 表格 */
+.course-row{
+    display:flex;
+    align-items:center;
+    height:0.8rem;
+    box-sizing:border-box;
+    border-bottom:0.01rem solid black;
+}
+.course-row:last-child{
+    border-bottom:none;
+}
+.course-type{
+    width:3rem;
+    height:0.8rem;
+    font-weight:bold;
+    white-space:nowrap;
+    text-align:center;
+    line-height:0.8rem;
+    font-size:0.36rem;
+    border-right:0.01rem solid black;
+}
+.course-tags{
+    flex:1;
+    height:0.8rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    line-height:0.8rem;
+    list-style-type:none;
+    font-size:0.28rem;
+    gap:0.2rem;
+}
+.course-tags a{
+    color:red;
+}
+.course-tags a:hover{
+    text-decoration:underline;
+    text-decoration-thickness:0.01rem;
+}
+/* 推荐书本 */
+.online-course .container-bottom{
+    width:17.7rem;
+    height:5rem;
+    /* border:1px solid black; */
+    margin:0.3rem auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.container-bottom .book-box01{
+    width:4rem;
+    height:5rem;
+    border:0.01rem solid black;
+    border-left:0.01rem solid grey;
+    border-top:0.01rem solid grey;
+    cursor: pointer;
+}
+.container-bottom .book-box01:hover{
+    box-shadow:0.1rem 0.2rem 0.5em grey;
+}
+.book-box01 img{
+    width:3.5rem;
+    height:3rem;
+    margin:0.2rem;
+    border:0.01rem solid grey;
+    border-radius:0.1rem;
+}
+.book-box01 h2{
+    color:black;
+    text-align:center;
+}
+.book-box01 p{
+    font-size:0.18rem;
+    margin:0.2rem;
+    text-align:center;   
+}
+
+/* 题库 */
+.pritice{
+    width:18rem;
+    height:6.5rem;
+    margin:0.45rem auto;
+    /* border:1px solid black; */
+}
+.pritice .title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.title a{
+    font-size:0.36rem;
+    color:#AAAAAA;
+    text-decoration:none;
+    padding:0 0.3rem;
+}
+.pritice-box{
+    width:17.7rem;
+    height:5rem;
+    /* border:1px solid black; */
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.pritice-box .card{
+    width:4rem;
+    height:5rem;
+    perspective:10rem;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    border-radius:0.1rem;
+}
+.card-box{
+    width:100%;
+    height:100%;
+    border:0.01rem solid #797979;
+    position:absolute;
+    top: 0;
+    left: 0;
+    backface-visibility:hidden;
+    transition:all 0.6s ease;
+    transform-style:preserve-3d;
+    border-radius:0.1rem;
+}
+.card-box.zheng{
+    background-color:white;
+    transform:rotateY(0deg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.card:hover .card-box.zheng{
+    transform:rotateY(-180deg);
+    transition:all 1s ease;
+}
+.card-box.back{
+    background-color:#333333;
+    color:white;
+    transform:rotateY(-180deg);
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.card:hover .card-box.back{
+    transform:rotateY(0deg);
+}
+.card-box i{
+    font-size:3rem;
+    color:red;
+}
+.card-box h2{
+    font-size:0.48rem;
+    color:black;
+}
+/* 翻面效果 */
+.card-box.back table{
+    width:3rem;
+    height:4rem;
+}
+.card-box.back td{
+    text-align:center;
+}
+.card-box.back .more{
+    font-size:0.36rem;
+    color:#EC808D;
+    text-decoration:none;
+}
+.card-box.back .iconfont.icon-arrow-right-bold{
+    font-size:0.36rem;
+    color:#EC808D;
+}
+.card-box.back table a{
+    color:#FFFF80;
+    font-size:0.36rem;
+}
+.card-box.back table a:hover{
+    text-decoration:underline;
+    text-underline-offset:0.05rem;
+}
+.card-box.back .table-style td{
+    width:3rem;
+    height:0.9rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* 资源 */
+.resource{
+    width:19.2rem;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid black; */
+}
+.resource .resource-son{
+    width:18rem;
+    height:auto;
+    border:0.01rem solid #797979;
+    border-radius:0.35rem;
+    padding:0.2rem;
+}
+.resource-son h1{
+    font-size:0.48rem;
+}
+.resource-son p{
+    display:flex;
+    /* 允许换行 */
+    flex-wrap:wrap;
+    justify-content:space-between;
+    row-gap:0.1rem;
+    height:auto;
+    padding:0.1rem;
+}
+.resource-son p a{
+    color:red;
+    font-size:0.36rem;
+    white-space:nowrap;
+    text-align:left;
+    width:32%;
+    box-sizing:border-box;
+}
+.resource-son p a:hover{
+    color:blue;
+    text-decoration:underline;
+}
